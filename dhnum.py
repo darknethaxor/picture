@@ -57,7 +57,7 @@ def select():
     digiin = input("")
 logo()
 digit()
-print(f"{bcolors.BOLD}{bcolors.OKGREEN}Chose Digit: {bcolors.ENDC}",end="")
+print(f"{bcolors.BOLD}{bcolors.OKGREEN}\nChose Digit: {bcolors.ENDC}",end="")
 digiin = str(input(""))
 if digiin== "1":
     os.system('clear')
